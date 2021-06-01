@@ -1,0 +1,55 @@
+# Compile of Dekoder.vhd was successful.
+vsim -gui work.d4to16
+# vsim -gui work.d4to16 
+# Start time: 14:33:53 on Jun 01,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.d4to16(dekoder)
+add wave -position insertpoint  \
+sim:/d4to16/input
+add wave  \
+sim:/d4to16/input
+force -freeze sim:/d4to16/input 0000 0
+run
+force -freeze sim:/d4to16/input 0000000000000001 0
+# Value length (16) does not equal array index length (4).
+# ** UI-Msg: (vsim-4011) Invalid force value: 0000000000000001 0.
+# 
+run
+add wave -position insertpoint  \
+sim:/d4to16/output
+add wave -position insertpoint  \
+sim:/d4to16/output
+force -freeze sim:/d4to16/input 0000 0
+run
+force -freeze sim:/d4to16/input 0001 0
+run
+# Compile of Dekoder.vhd was successful.
+vsim -gui work.d4to16
+# End time: 14:36:45 on Jun 01,2021, Elapsed time: 0:02:52
+# Errors: 0, Warnings: 3
+# vsim -gui work.d4to16 
+# Start time: 14:36:45 on Jun 01,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.d4to16(dekoder)
+add wave  \
+sim:/d4to16/input
+add wave  \
+sim:/d4to16/output
+force -freeze sim:/d4to16/input 0000 0
+run
+force -freeze sim:/d4to16/input 0001 0
+run
+force -freeze sim:/d4to16/input 0010 0
+run
+force -freeze sim:/d4to16/input 0011 0
+run
+# Project file C:/Users/Cmv/Desktop/Dekoder.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# Project file C:/Users/Cmv/Desktop/Dekoder.mpf is write protected, data cannot be saved.
+# Unable to save project.
+# End time: 14:41:09 on Jun 01,2021, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 0
